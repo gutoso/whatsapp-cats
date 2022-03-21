@@ -44,7 +44,7 @@ func SendCatPicture(client *whatsmeow.Client, receiver types.JID) error {
 	utils.GetJson("https://api.thecatapi.com/v1/images/search?limit=1&size=full&mime_types=jpg", &c)
 	err := utils.UploadImage(
 		c[0].URL,
-		"um gatinho fofo pra vc ☺️",
+		"miau 🐈‍⬛",
 		"image/png",
 		client,
 		receiver)
